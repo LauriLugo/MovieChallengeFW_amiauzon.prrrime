@@ -1,25 +1,25 @@
-import logo from './logo.svg';
-import './App.css';
+import HomePage from "./home_page/home_page";
+import LogoPage from "./logo_page/logo_page";
+import PlayPage from "./play_page/play_page";
+import { useState } from "react";
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+  const [logo, setLogo] = useState(true);
+  // esperar 5 segundos para mostrar home-page 
+  setTimeout(() => {
+    setLogo(false);
+  }, 5000);
+
+  if (logo) {
+    return (
+      <LogoPage />
+    ); 
+  } else {
+    return (
+      <HomePage />
+    );
+  }
+
 }
 
 export default App;

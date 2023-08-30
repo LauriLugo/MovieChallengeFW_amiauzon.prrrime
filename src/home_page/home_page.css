@@ -1,0 +1,27 @@
+.Logotipo1 {
+    
+    }
+.navbar-item {
+    font-family: 'Roboto', sans-serif;
+    font-size: 20px;
+    margin: 7px;
+    }
+.column {
+    width: 50%;
+    padding: 10px;
+    font-size: 20px;
+    font-family: 'Roboto', sans-serif;
+    color: #f7f7f7;
+    margin: 10px;
+    margin-left: 100px;
+    }
+/* .block {
+    display: block;
+    width: 100%;
+    border: none;
+    background-color: #4CAF50;
+    padding: 14px 28px;
+    font-size: 16px;
+    cursor: pointer;
+    text-align: center;
+} */

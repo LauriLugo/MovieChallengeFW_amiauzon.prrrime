@@ -1,4 +1,4 @@
-function ProfileCard({ title, handle, image, description }) {
+function ProfileCard({ title, date, image, description, genre }) {
   return (
     <div className="card">
       <div className="card-image">
@@ -8,14 +8,14 @@ function ProfileCard({ title, handle, image, description }) {
       </div>
 
       <div className="card-content">
-        <div className="media-content">
-          <p className="tittle is-4">{title}</p>
-          <p className="subtitle is-6">{handle}</p>
-        </div>
-        <div className="content">{description}</div>
+        <p className="tittle is-4">{title}</p>
+        <p className="subtitle is-6">{date}</p>
+        <p className="content">{description}</p>
+        <p className="subtitle is-7">{genre}</p>
       </div>
     </div>
   );
 }
 
-export default ProfileCard; 
+
+export default ProfileCard;

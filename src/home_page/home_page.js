@@ -1,8 +1,7 @@
 import 'bulma/css/bulma.css'
 import ProfileCard from "./ProfileCard";
+import flecha from "../images/flecha.png";
 import AlexaImage from "../images/alexa.png";
-import CortanaImage from "../images/cortana.png";
-import SiriImage from "../images/siri.png";
 import Logotipo1 from "../images/Logotipo1.png";
 import './home_page.css';
 
@@ -10,13 +9,6 @@ import './home_page.css';
 function HomePage() {
   return (
     <div>
-      {/* <section className='hero is-primary'>
-        <div className='hero-body'>
-          <img className='Logotipo1' src={Logotipo1} alt="Logotipo" />
-          <p className='title'>Personal Digital Assistants</p>
-        </div>
-      </section> */}
-
       <nav className="navbar is-black" role="navigation" aria-label="main navigation">
         <div className="navbar-brand">
           <a className="navbar-item" href="">
@@ -29,7 +21,6 @@ function HomePage() {
             <span aria-hidden="true"></span>
           </a>
         </div>
-
         <div id="navbarBasicExample" className="navbar-menu">
           <div className="navbar-start">
             <a className="navbar-item">
@@ -75,61 +66,98 @@ function HomePage() {
           </div>
         </div>
       </nav>
-      <div class="block"></div>
-      <div className='recommended'>
-        <div className="columns">
-          <div className="column">
-            Title 
-          </div>
-          <div className="column">
-            Imagen
-          </div>
-        </div>
-      </div>
 
-      {/* <div class="block">
-        This text is within a <strong>block</strong>.
-      </div>
-      <div class="block">
-        This text is within a <strong>second block</strong>. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean efficitur sit amet massa fringilla egestas. Nullam condimentum luctus turpis.
-      </div>
-      <div class="block">
-        This text is within a <strong>third block</strong>. This block has no margin at the bottom.
-      </div> */}
-
-
-
-
-      {/* <div className='container'>
+      <div className='container'>
         <section className='section'>
           <div className='columns'>
-            <div className='column is-4'>
+
+            <div className='recommended'>
+              <div className="columns">
+              </div>
+            </div>
+
+            <div className='column is-5'>
+              <div className="column is-narrow">
+                <div className='box'>
+                  <p className='title is-2'>Title</p>
+                  <br></br>
+                  <p className='Subtitle'>Date:</p>
+                  <p className='Subtitle'>Description:</p>
+                  <p className='Subtitle'>Genre:</p>
+                </div>
+              </div>
+            </div>
+            <div className='column is-5'>
               <ProfileCard
-                title="Alexa"
-                handle="@alexa99"
                 image={AlexaImage}
-                description="Alexa was created by Amazon and helps you buy things"
               />
             </div>
-            <div className='column is-4'>
+
+          </div>
+        </section>
+      </div>
+
+      <div className='Subtitle'>
+        <div className="block">
+          <h1>TV Shows</h1>
+        </div>
+        <section className='posters'>
+          <div className='columns'>
+            <div className='column is-3'>
               <ProfileCard
-                title="Cortana"
-                handle="@cortana32"
-                image={CortanaImage}
-                description="Cortana was made by Microsoft. Who knows what it does?"
+                image={AlexaImage}
               />
             </div>
-            <div className='column is-4'>
+            <div className='column is-3'>
               <ProfileCard
-                title="Siri"
-                handle="@siri01"
-                image={SiriImage}
-                description="Siri was made by Apple and us being phased out"
+                image={AlexaImage}
               />
+            </div>
+            <div className='column is-3'>
+              <ProfileCard
+                image={AlexaImage}
+              />
+              <div className='next'>
+                image={flecha}
+              </div>
             </div>
           </div>
         </section>
-      </div> */}
+      </div>
+
+      <div className='Subtitle'>
+        <div className="block">
+          <h1>Movies</h1>
+        </div>
+        <section className='posters'>
+          <div className='columns'>
+            <div className='column is-3'>
+              <ProfileCard
+                image={AlexaImage}
+              />
+            </div>
+            <div className='column is-3'>
+              <ProfileCard
+                image={AlexaImage}
+              />
+            </div>
+            <div className='column is-3'>
+              <ProfileCard
+                image={AlexaImage}
+              />
+              <div className='next'>
+                image={flecha}
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
+
+
+
+
+
+
     </div>
   );
 }

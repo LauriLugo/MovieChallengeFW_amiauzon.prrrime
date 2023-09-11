@@ -1,15 +1,18 @@
 import 'bulma/css/bulma.css'
 import ProfileCard from "./ProfileCard";
-import next from "../images/next.png";
 import AlexaImage from "../images/alexa.png";
+import next from "../images/next.png";
 import Logotipo1 from "../images/Logotipo1.png";
+import PrrrimeMichivideo from "../images/PrrrimeMichivideo.png";
 import './home_page.css';
+import React, { useRef } from 'react';
 
 
 function HomePage() {
   return (
-// MENU DE NAVEGACION
     <div>
+
+      {/* // MENU DE NAVEGACION */}
       <nav className="navbar is-black" role="navigation" aria-label="main navigation">
         <div className="navbar-brand">
           <a className="navbar-item" href="">
@@ -67,20 +70,33 @@ function HomePage() {
           </div>
         </div>
       </nav>
-{/* SLIDER */}
-{/* CONTAINER PELICULAS PRINCIPAPES */}
+
+      {/* SLIDER */}
+      {/* const listRef = useRef();
+        return (
+        <div className='main-container'>
+          <div className='slider-container'>
+            <div className='container-images'>
+              <ul ref= {listRef}>
+
+              </ul>
+            </div>
+          </div>
+        </div> */}
+
+      {/* CONTAINER PELICULAS PRINCIPAPES */}
       <div className='container'>
         <section className='section'>
           <div className='columns'>
 
             <div className="column">
               <div className="box">
-                <p className="title is-1">Title</p>
+                <p className="title is-1" id='subtitleTitle'>Title</p>
                 <br></br>
                 <br></br>
-                <h3 className='title is-5'>Date:</h3>
+                <h3 className='subtitle'>Date:</h3>
                 <p className="subtitle">This column will take up the remaining space available.</p>
-                <h3 className='title is-5'>Genre:</h3>
+                <h3 className='subtitle'>Genre:</h3>
               </div>
             </div>
             <div className="column is-narrow">
@@ -92,87 +108,158 @@ function HomePage() {
           </div>
         </section>
       </div>
-{/* TV SHOWS */}
+
+      {/* TV SHOWS */}
+
       <div className='Subtitle'>
         <div className="block">
           <h1>TV Shows</h1>
         </div>
-        <section className='posters'>
+      <div className='container'>
+        <section className='section'>
           <div className='columns'>
-            <div className='column is-2'>
-              <ProfileCard
-                image={AlexaImage}
-              />
+            <div className="column is-narrow">
+              <div className="boxImage">
+                <img className='poster' src={AlexaImage} alt='AlexaImage'></img>
+              </div>
             </div>
-            <div className='column is-2'>
-              <ProfileCard
-                image={AlexaImage}
-              />
+            <div className="column is-narrow">
+              <div className="boxImage">
+                <img className='poster' src={AlexaImage} alt='AlexaImage'></img>
+              </div>
             </div>
-            <div className='column is-2'>
-              <ProfileCard
-                image={AlexaImage}
-              />
+            <div className="column is-narrow">
+              <div className="boxImage">
+                <img className='poster' src={AlexaImage} alt='AlexaImage'></img>
+              </div>
             </div>
-            <div className='column is-2'>
-              <ProfileCard
-                image={AlexaImage}
-              />
+            <div className="column is-narrow">
+              <div className="boxImage">
+                <img className='poster' src={AlexaImage} alt='AlexaImage'></img>
+              </div>
             </div>
-            <div className='column is-2'>
-              <ProfileCard
-                image={AlexaImage}
-              />
+            <div className="column is-narrow">
+              <div className="boxImage">
+                <img className='poster' src={AlexaImage} alt='AlexaImage'></img>
+              </div>
             </div>
-            <div className='next'>
-              image={next}
+            <div className="column is-narrow">
+              <div className="boxImage">
+                <img className='poster' src={AlexaImage} alt='AlexaImage'></img>
+              </div>
+            </div>
+            <div className="column is-narrow">
+              <div className="boxImage">
+                <img className='next' src={next} alt='Next'></img>
+              </div>
             </div>
           </div>
         </section>
       </div>
+      </div>
 
+      {/* MOVIES */}
       <div className='Subtitle'>
         <div className="block">
           <h1>Movies</h1>
         </div>
-        <section className='posters'>
+      <div className='container'>
+        <section className='section'>
           <div className='columns'>
-            <div className='column is-2'>
-              <ProfileCard
-                image={AlexaImage}
-              />
+            <div className="column is-narrow">
+              <div className="boxImage">
+                <img className='poster' src={AlexaImage} alt='AlexaImage'></img>
+              </div>
             </div>
-            <div className='column is-2'>
-              <ProfileCard
-                image={AlexaImage}
-              />
+            <div className="column is-narrow">
+              <div className="boxImage">
+                <img className='poster' src={AlexaImage} alt='AlexaImage'></img>
+              </div>
             </div>
-            <div className='column is-2'>
-              <ProfileCard
-                image={AlexaImage}
-              />
+            <div className="column is-narrow">
+              <div className="boxImage">
+                <img className='poster' src={AlexaImage} alt='AlexaImage'></img>
+              </div>
             </div>
-            <div className='column is-2'>
-              <ProfileCard
-                image={AlexaImage}
-              />
+            <div className="column is-narrow">
+              <div className="boxImage">
+                <img className='poster' src={AlexaImage} alt='AlexaImage'></img>
+              </div>
             </div>
-            <div className='column is-2'>
-              <ProfileCard
-                image={AlexaImage}
-              />
+            <div className="column is-narrow">
+              <div className="boxImage">
+                <img className='poster' src={AlexaImage} alt='AlexaImage'></img>
+              </div>
             </div>
-
-
+            <div className="column is-narrow">
+              <div className="boxImage">
+                <img className='poster' src={AlexaImage} alt='AlexaImage'></img>
+              </div>
+            </div>
+            <div className="column is-narrow">
+              <div className="boxImage">
+                <img className='next' src={next} alt='Next'></img>
+              </div>
+            </div>
           </div>
         </section>
       </div>
+      </div>
 
+      {/* DOCUMENTARIES */}
+      <div className='Subtitle'>
+        <div className="block">
+          <h1>Documentaries</h1>
+        </div>
+      <div className='container'>
+        <section className='section'>
+          <div className='columns'>
+            <div className="column is-narrow">
+              <div className="boxImage">
+                <img className='poster' src={AlexaImage} alt='AlexaImage'></img>
+              </div>
+            </div>
+            <div className="column is-narrow">
+              <div className="boxImage">
+                <img className='poster' src={AlexaImage} alt='AlexaImage'></img>
+              </div>
+            </div>
+            <div className="column is-narrow">
+              <div className="boxImage">
+                <img className='poster' src={AlexaImage} alt='AlexaImage'></img>
+              </div>
+            </div>
+            <div className="column is-narrow">
+              <div className="boxImage">
+                <img className='poster' src={AlexaImage} alt='AlexaImage'></img>
+              </div>
+            </div>
+            <div className="column is-narrow">
+              <div className="boxImage">
+                <img className='poster' src={AlexaImage} alt='AlexaImage'></img>
+              </div>
+            </div>
+            <div className="column is-narrow">
+              <div className="boxImage">
+                <img className='poster' src={AlexaImage} alt='AlexaImage'></img>
+              </div>
+            </div>
+            <div className="column is-narrow">
+              <div className="boxImage">
+                <img className='next' src={next} alt='Next'></img>
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
+      </div>
 
-
-
-
-
+      {/* FOOTER */}
+      <footer className="footer">
+        <div className="content has-text-centered">
+          <img className='prrrimeMichiVideo' src={PrrrimeMichivideo} alt='Prrrime MichiVideo'></img>
+        </div>
+      </footer>
     </div>
   );
 }

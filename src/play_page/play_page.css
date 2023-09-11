@@ -1,3 +1,8 @@
+.body {
+    background-color: #000000;
+    height: 100vh;
+    }
+
 .navbar-item {
     font-size: 20px;
     margin: 7px;
@@ -9,9 +14,10 @@
     position: relative;
 }
 
-.columns{
+.column{
     width: auto;
     height: auto;
+    background-color: #000000;
 }
 .boxImage{
     width: 200px;

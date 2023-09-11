@@ -1,6 +1,6 @@
 import 'bulma/css/bulma.css'
 import ProfileCard from "./ProfileCard";
-import flecha from "../images/flecha.png";
+import next from "../images/next.png";
 import AlexaImage from "../images/alexa.png";
 import Logotipo1 from "../images/Logotipo1.png";
 import './home_page.css';
@@ -8,6 +8,7 @@ import './home_page.css';
 
 function HomePage() {
   return (
+// MENU DE NAVEGACION
     <div>
       <nav className="navbar is-black" role="navigation" aria-label="main navigation">
         <div className="navbar-brand">
@@ -66,60 +67,65 @@ function HomePage() {
           </div>
         </div>
       </nav>
-
+{/* SLIDER */}
+{/* CONTAINER PELICULAS PRINCIPAPES */}
       <div className='container'>
         <section className='section'>
           <div className='columns'>
 
-            <div className='recommended'>
-              <div className="columns">
+            <div className="column">
+              <div className="box">
+                <p className="title is-1">Title</p>
+                <br></br>
+                <br></br>
+                <h3 className='title is-5'>Date:</h3>
+                <p className="subtitle">This column will take up the remaining space available.</p>
+                <h3 className='title is-5'>Genre:</h3>
               </div>
             </div>
-
-            <div className='column is-5'>
-              <div className="column is-narrow">
-                <div className='box'>
-                  <p className='title is-2'>Title</p>
-                  <br></br>
-                  <p className='Subtitle'>Date:</p>
-                  <p className='Subtitle'>Description:</p>
-                  <p className='Subtitle'>Genre:</p>
-                </div>
+            <div className="column is-narrow">
+              <div className="boxImage">
+                <p className="title is-5">Columna para la imagen</p>
+                <p className="subtitle">This column is only 200px wide.</p>
               </div>
             </div>
-            <div className='column is-5'>
-              <ProfileCard
-                image={AlexaImage}
-              />
-            </div>
-
           </div>
         </section>
       </div>
-
+{/* TV SHOWS */}
       <div className='Subtitle'>
         <div className="block">
           <h1>TV Shows</h1>
         </div>
         <section className='posters'>
           <div className='columns'>
-            <div className='column is-3'>
+            <div className='column is-2'>
               <ProfileCard
                 image={AlexaImage}
               />
             </div>
-            <div className='column is-3'>
+            <div className='column is-2'>
               <ProfileCard
                 image={AlexaImage}
               />
             </div>
-            <div className='column is-3'>
+            <div className='column is-2'>
               <ProfileCard
                 image={AlexaImage}
               />
-              <div className='next'>
-                image={flecha}
-              </div>
+            </div>
+            <div className='column is-2'>
+              <ProfileCard
+                image={AlexaImage}
+              />
+            </div>
+            <div className='column is-2'>
+              <ProfileCard
+                image={AlexaImage}
+              />
+            </div>
+            <div className='next'>
+              image={next}
             </div>
           </div>
         </section>
@@ -131,24 +137,33 @@ function HomePage() {
         </div>
         <section className='posters'>
           <div className='columns'>
-            <div className='column is-3'>
+            <div className='column is-2'>
               <ProfileCard
                 image={AlexaImage}
               />
             </div>
-            <div className='column is-3'>
+            <div className='column is-2'>
               <ProfileCard
                 image={AlexaImage}
               />
             </div>
-            <div className='column is-3'>
+            <div className='column is-2'>
               <ProfileCard
                 image={AlexaImage}
               />
-              <div className='next'>
-                image={flecha}
-              </div>
             </div>
+            <div className='column is-2'>
+              <ProfileCard
+                image={AlexaImage}
+              />
+            </div>
+            <div className='column is-2'>
+              <ProfileCard
+                image={AlexaImage}
+              />
+            </div>
+
+
           </div>
         </section>
       </div>

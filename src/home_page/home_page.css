@@ -6,25 +6,33 @@
 .container {
     display: flex;
     justify-content: center;
-    position: relative;
+    align-items: center;
+    flex-direction: column;
+    
 }
 
 .columns{
     width: auto;
     height: auto;
 }
+.box {
+    background-color: #000000;
+    color: #ffffff;
+}
+#subtitleTitle{
+    color: #ffffff;
+}
+.subtitle{
+    color: #ffffff;
+}
 .boxImage{
-    width: 200px;
+    width: 170px;
 }
 .Subtitle{
     color: #ffffff;
     background-color: #000000;
 }
 
-.box {
-    background-color: #000000;
-    color: #ffffff;
-}
 
 /* .section {
     background-color: #000000;
@@ -35,9 +43,13 @@
     padding: 14px 28px;
     font-size: 20px;
 }
-.primeMichiVideo {
+.footer {
+    background-color: #000000;
+}
+.prrrimeMichiVideo {
     background-color: #000000;
     color: #ffffff;
-    padding: 14px 28px;
+    padding-top: 77px;
     align-items: center;
-}
+    width: 20%;
+} 

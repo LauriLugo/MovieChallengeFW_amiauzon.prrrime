@@ -1,49 +1,45 @@
-.body {
-    background-color: #000000;
-    height: 100vh;
-    }
-
 .navbar-item {
-    font-size: 20px;
-    margin: 7px;
-    }
-
+  font-size: 20px;
+  margin: 7px;
+}
+.titleMovie {
+    color: #ffffff;
+    padding-left: 30px;
+}
+.containerInfo {
+    
+}
+.info {
+    color: #ffffff;
+    background-color: #000000;
+    padding-left: 30px;
+}
 .container {
-    display: flex;
-    justify-content: center;
-    position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  }
+.boxImage {
+  width: 170px;
+}
+.Subtitle {
+  color: #ffffff;
+  background-color: #000000;
 }
 
-.column{
-    width: auto;
-    height: auto;
-    background-color: #000000;
-}
-.boxImage{
-    width: 200px;
-}
-.Subtitle{
-    color: #ffffff;
-    background-color: #000000;
-}
-
-.box {
-    background-color: #000000;
-    color: #ffffff;
-}
-
-/* .section {
-    background-color: #000000;
-    color: #ffffff;
-} */
 .block {
-    background-color: #000000;
-    padding: 14px 28px;
-    font-size: 20px;
+  background-color: #000000;
+  padding: 14px 28px;
+  font-size: 20px;
 }
-.primeMichiVideo {
+.footer {
+    background-color: #000000;
+}
+.prrrimeMichiVideo {
     background-color: #000000;
     color: #ffffff;
-    padding: 14px 28px;
+    padding-top: 77px;
     align-items: center;
+    width: 20%;
 }

@@ -1,14 +1,15 @@
 import 'bulma/css/bulma.css'
-// import ProfileCard from "../ProfileCard";
-// import next from "../images/next.png";
-// import AlexaImage from "../images/alexa.png";
+import next from "../images/next.png";
+import AlexaImage from "../images/alexa.png";
 import Logotipo1 from "../images/Logotipo1.png";
-// import './play_page.css';
+import PrrrimeMichivideo from "../images/PrrrimeMichivideo.png";
+import './play_page.css';
 
 function PlayPage() {
     return (
-        // MENU DE NAVEGACION
         <div>
+
+            {/* MENU DE NAVEGACION */}
             <nav className="navbar is-black" role="navigation" aria-label="main navigation">
                 <div className="navbar-brand">
                     <a className="navbar-item" href="">
@@ -67,27 +68,92 @@ function PlayPage() {
                 </div>
             </nav>
 
-            <div className='containerVideo'>
-                <figure className="image is-4by3">
-                    <iframe className="has-ratio" width="340" height="160" src="https://www.youtube.com/embed/YE7VzlLtp-4" allowfullscreen></iframe>
-                </figure>
-            </div>
-            <div className="column">
-              <div className="box">
-                <h3>Date:</h3>
-                <br></br>
-                <p>This column will take up the remaining space available.</p>
-                <br></br>
-                <h3>Genre:</h3>
-              </div>
-            </div>
-            <div className='Subtitle'>
-                <div className='block'>
-                    <h1>TV Shows</h1>
-                </div>
-                
+            {/* TITULO */}
+            <div className='containerInfo'>
+                <div className='title'>
+                    <br></br>
+                    <h1 className='titleMovie'>Título de la película</h1>
+                    <br></br>
+                    </div>
             </div>
 
+
+            {/* VIDEO */}
+            <div className='containerVideo'>
+                <figure className="image is-16by9">
+                    <iframe class="has-ratio" width="640" height="360" src="https://www.youtube.com/embed/YE7VzlLtp-4" frameborder="0" allowfullscreen></iframe>
+                </figure>            
+                </div>
+
+            {/* INFO */}
+            <div className='containerInfo'>
+                <div className="info">
+                    <br></br>
+                    <h3 className='Date'>Date:</h3>
+                    <br></br>
+                    <h3>This column will take up the remaining space available.</h3>
+                    <br></br>
+                    <h3>Genre:</h3>
+                    <br></br>
+                    <br></br>
+
+                </div>
+            </div>
+
+            {/* YOY CAN ALSO SEE */}
+            <div className='Subtitle'>
+                <div className="block">
+                    <h1>You can also see</h1>
+                </div>
+                <div className='container'>
+                    <section className='section'>
+                        <div className='columns'>
+                            <div className="column is-narrow">
+                                <div className="boxImage">
+                                    <img className='poster' src={AlexaImage} alt='AlexaImage'></img>
+                                </div>
+                            </div>
+                            <div className="column is-narrow">
+                                <div className="boxImage">
+                                    <img className='poster' src={AlexaImage} alt='AlexaImage'></img>
+                                </div>
+                            </div>
+                            <div className="column is-narrow">
+                                <div className="boxImage">
+                                    <img className='poster' src={AlexaImage} alt='AlexaImage'></img>
+                                </div>
+                            </div>
+                            <div className="column is-narrow">
+                                <div className="boxImage">
+                                    <img className='poster' src={AlexaImage} alt='AlexaImage'></img>
+                                </div>
+                            </div>
+                            <div className="column is-narrow">
+                                <div className="boxImage">
+                                    <img className='poster' src={AlexaImage} alt='AlexaImage'></img>
+                                </div>
+                            </div>
+                            <div className="column is-narrow">
+                                <div className="boxImage">
+                                    <img className='poster' src={AlexaImage} alt='AlexaImage'></img>
+                                </div>
+                            </div>
+                            <div className="column is-narrow">
+                                <div className="boxImage">
+                                    <img className='next' src={next} alt='Next'></img>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                </div>
+            </div>
+
+            {/* FOOTER */}
+            <footer className="footer">
+                <div className="content has-text-centered">
+                    <img className='prrrimeMichiVideo' src={PrrrimeMichivideo} alt='Prrrime MichiVideo'></img>
+                </div>
+            </footer>
 
         </div>
 

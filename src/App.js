@@ -16,7 +16,7 @@ function App() {
     ); 
   } else {
     return (
-      <HomePage/>
+      <PlayPage/>
     );
   }
 
